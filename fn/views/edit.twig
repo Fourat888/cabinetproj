@@ -1,0 +1,12 @@
+<html>
+<body>
+<h1> {{title}} </h1>
+ <form action="/Patient/edit/{{ cont._id }}" method="POST">
+                <label for="FullName">FullName</label>
+                <input type="text" class="input_style" name="FullName" id="FullName" placeholder="Enter post FullName" value="{{cont.FullName}}" required>
+                <label for="Phone">Phone </label>
+                <input type="text"  id="Phone" name="Phone" class="input_style" placeholder="Phone" value="{{cont.Phone}}">
+                <input type="submit" value="Update" class="submit-btn">
+            </form>
+</body>
+</html>
